@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BooksApi.Domain\BooksApi.Domain.csproj" />
     <ProjectReference Include="..\BooksApi.ServiceLayer\BooksApi.ServiceLayer.csproj" />
+    <ProjectReference Include="..\BooksApi.DataLayer\BooksApi.DataLayer.csproj" />
   </ItemGroup>
 
 </Project>
