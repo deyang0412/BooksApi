@@ -11,6 +11,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using BooksApi.DataLayer;
+using BooksApi.BusinessLayer;
+using BooksApi.Domain.Interfaces;
 
 namespace BooksApi.HttpHost
 {
@@ -28,6 +30,9 @@ namespace BooksApi.HttpHost
         {
             services.AddDbContext<BooksDbContext>(options =>
                 options.UseSqlite(Configuration.GetConnectionString("BooksDatabase")));
+            
+            services.AddScoped(typeof(IRepository<>),typeof(GenericRepository<>));
+
             services.AddMvc();
         }
 
