@@ -1,0 +1,5 @@
+BooksApi.BusinessLayer/obj/
+BooksApi.DataLayer/obj/
+BooksApi.Domain/obj/
+BooksApi.HttpHost/obj/
+BooksApi.ServiceLayer/obj/

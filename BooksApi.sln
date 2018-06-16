@@ -1,0 +1,90 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApi.Domain", "BooksApi.Domain\BooksApi.Domain.csproj", "{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApi.DataLayer", "BooksApi.DataLayer\BooksApi.DataLayer.csproj", "{9CB49678-F055-4BDE-B301-E5AE32535F26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApi.BusinessLayer", "BooksApi.BusinessLayer\BooksApi.BusinessLayer.csproj", "{78F4003B-6C97-46B9-98DC-1DA50A009679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApi.ServiceLayer", "BooksApi.ServiceLayer\BooksApi.ServiceLayer.csproj", "{1450B1DC-A6F4-4FAF-8359-C12D80966B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApi.HttpHost", "BooksApi.HttpHost\BooksApi.HttpHost.csproj", "{70E1C97B-5D56-4E00-B921-49AC62A2B650}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|x64.ActiveCfg = Debug|x64
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|x64.Build.0 = Debug|x64
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|x86.ActiveCfg = Debug|x86
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Debug|x86.Build.0 = Debug|x86
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|x64.ActiveCfg = Release|x64
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|x64.Build.0 = Release|x64
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|x86.ActiveCfg = Release|x86
+		{D8F8B271-E34E-4BC8-9163-FC3F693F1CD6}.Release|x86.Build.0 = Release|x86
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|x64.ActiveCfg = Debug|x64
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|x64.Build.0 = Debug|x64
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|x86.ActiveCfg = Debug|x86
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Debug|x86.Build.0 = Debug|x86
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|x64.ActiveCfg = Release|x64
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|x64.Build.0 = Release|x64
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|x86.ActiveCfg = Release|x86
+		{9CB49678-F055-4BDE-B301-E5AE32535F26}.Release|x86.Build.0 = Release|x86
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|x64.ActiveCfg = Debug|x64
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|x64.Build.0 = Debug|x64
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|x86.ActiveCfg = Debug|x86
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Debug|x86.Build.0 = Debug|x86
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|x64.ActiveCfg = Release|x64
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|x64.Build.0 = Release|x64
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|x86.ActiveCfg = Release|x86
+		{78F4003B-6C97-46B9-98DC-1DA50A009679}.Release|x86.Build.0 = Release|x86
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|x64.ActiveCfg = Debug|x64
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|x64.Build.0 = Debug|x64
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|x86.ActiveCfg = Debug|x86
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Debug|x86.Build.0 = Debug|x86
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|x64.ActiveCfg = Release|x64
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|x64.Build.0 = Release|x64
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|x86.ActiveCfg = Release|x86
+		{1450B1DC-A6F4-4FAF-8359-C12D80966B35}.Release|x86.Build.0 = Release|x86
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|x64.ActiveCfg = Debug|x64
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|x64.Build.0 = Debug|x64
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|x86.ActiveCfg = Debug|x86
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Debug|x86.Build.0 = Debug|x86
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|x64.ActiveCfg = Release|x64
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|x64.Build.0 = Release|x64
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|x86.ActiveCfg = Release|x86
+		{70E1C97B-5D56-4E00-B921-49AC62A2B650}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

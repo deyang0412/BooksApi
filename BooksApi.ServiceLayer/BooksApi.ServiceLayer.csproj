@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BooksApi.Domain\BooksApi.Domain.csproj" />
+    <ProjectReference Include="..\BooksApi.BusinessLayer\BooksApi.BusinessLayer.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
