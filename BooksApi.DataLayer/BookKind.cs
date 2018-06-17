@@ -4,7 +4,7 @@ namespace BooksApi.DataLayer
 {
     public class BookKind
     {
-        public int Guid { get; set; }
+        public string Guid { get; set; }
 
         public string Name { get; set; }
 

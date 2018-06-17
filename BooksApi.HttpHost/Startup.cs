@@ -29,7 +29,7 @@ namespace BooksApi.HttpHost
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BooksDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("BooksDatabase")));
+                options.UseSqlite(Configuration.GetConnectionString("BooksDatabase"), l => l.MigrationsAssembly("BooksApi.HttpHost")));
             
             services.AddScoped(typeof(IRepository<>),typeof(GenericRepository<>));
 
@@ -39,6 +39,8 @@ namespace BooksApi.HttpHost
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, BooksDbContext dbContext)
         {
+            env.EnvironmentName = EnvironmentName.Development;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
