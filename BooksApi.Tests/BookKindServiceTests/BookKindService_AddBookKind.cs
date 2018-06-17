@@ -6,6 +6,7 @@ using System;
 using System.Threading.Tasks;
 using Moq;
 using BooksApi.Tests;
+using BooksApi.Domain.Interfaces;
 
 namespace BooksApi.Tests.BookKindServiceTests
 {
@@ -39,12 +40,9 @@ namespace BooksApi.Tests.BookKindServiceTests
         {
             //arrange
             string kind = "中文English";
-            BookKind bookKind = new BookKind();
-            bookKind.Guid = "1";
-            bookKind.Name = kind;
 
             var repository = new Mock<StubRepository<BookKind>>();
-            repository.Setup(mock => mock.CreateAsync(bookKind));
+            //repository.Setup(mock => mock.CreateAsync(bookKind));
 
             var service = new BookKindService(repository.Object);
 
@@ -52,7 +50,7 @@ namespace BooksApi.Tests.BookKindServiceTests
             service.AddBookKind(kind).Wait();
 
             //assert
-            repository.Verify(mock => mock.CreateAsync(bookKind),Times.Once);
+            repository.Verify(mock => mock.CreateAsync(It.Is<BookKind>(bk => bk.Name == kind)));
         }
     }
 }
