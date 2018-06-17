@@ -211,7 +211,7 @@ namespace BooksApi.BusinessLayer
         }
 
         /// <summary>
-        /// 存取改變 非同步
+        /// 存取改變 同步
         /// </summary>
         public void SaveChanges()
         {
