@@ -13,6 +13,7 @@ namespace BooksApi.Tests
             var sqlitePath = @"..\..\..\..\BooksApi.HttpHost\Database\TestBooks.db";
             this.DbContext = new BooksDbContext(
                 new DbContextOptionsBuilder().UseSqlite($"Data Source={sqlitePath}").Options);
+            //this.DbContext.Database.EnsureDeleted();
             this.DbContext.Database.EnsureCreated();
         }
 

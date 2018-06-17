@@ -10,14 +10,8 @@ using BooksApi.Domain.Interfaces;
 
 namespace BooksApi.Tests.BookKindServiceTests
 {
-    public class BookKindService_AddBookKind : IClassFixture<DatabaseFixture>
+    public class BookKindService_AddBookKind
     {
-        private DatabaseFixture _DatabaseFixture { get; set; }
-
-        public BookKindService_AddBookKind(DatabaseFixture databaseFixture)
-        {
-            _DatabaseFixture = databaseFixture;
-        }
 
         [Fact]
         public void AddBookKind_Characters()
@@ -42,7 +36,6 @@ namespace BooksApi.Tests.BookKindServiceTests
             string kind = "中文English";
 
             var repository = new Mock<StubRepository<BookKind>>();
-            //repository.Setup(mock => mock.CreateAsync(bookKind));
 
             var service = new BookKindService(repository.Object);
 
