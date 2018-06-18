@@ -54,7 +54,7 @@ namespace BooksApi.BusinessLayer
             }
         }
 
-        public async Task<BookKind> ReadBookKindByGuid(string guid = "")
+        public async Task<BookKind> ReadBookKindByGuid(string guid)
         {
             if(guid.HasValue())
             {
@@ -65,6 +65,39 @@ namespace BooksApi.BusinessLayer
             else
             {
                 throw new ArgumentNullException("guid");
+            }
+        }
+
+        public async Task DestroyBookKind(string guid)
+        {
+            if(guid.HasValue())
+            {
+                BookKind bookKind = await ReadBookKindByGuid(guid);
+
+                if(bookKind != null)
+                {
+                    await _BookKindRepository.DeleteAsync(bookKind);
+                }
+                else
+                {
+                    throw new ArgumentException($"根據索引鍵{guid}找不到資料");
+                }
+            }
+            else
+            {
+                throw new ArgumentNullException("guid");
+            }
+        }
+
+        public async Task UpdateBookKind(BookKind bookKind)
+        {
+            if(bookKind != null)
+            {
+                await _BookKindRepository.UpdateAsync(bookKind);
+            }
+            else
+            {
+                throw new ArgumentNullException("bookKind");
             }
         }
     }
